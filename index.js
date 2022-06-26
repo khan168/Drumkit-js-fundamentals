@@ -50,14 +50,14 @@ function makesound(key){
       break;
 
     default:
-      console.log(ch);
+      console.log(key);
 
   }
 }
 
 function buttonanimation(key){
-  document.querySelector('.' + key).classList.add("pressed");
+  $("." + key).addClass("pressed");
   setTimeout(function () {
-    document.querySelector('.' + key).classList.remove("pressed");
+  $("." + key).removeClass("pressed");
   }, 100);
 }
